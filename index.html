@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="src/img/icon-title.svg">
+    <title>FURNITURE LANDINGPAGE</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +17,7 @@
         <img class="logo" src="src/img/logo.svg" alt="">
 
         <nav>
-            <ul class="nav__links">
+            <ul class="nav_links">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Furniture <i class="fa-solid fa-chevron-down"></i></a></li>
                 <li><a href="#">Partnership</a></li>
@@ -25,8 +26,8 @@
         </nav>
 
         <div class="nav-button">
-            <a href="" class="cta"><button>Sign Up</button></a>
-            <a href=""><button class="shop-bag"><i class="fa-sharp fa-solid fa-bag-shopping"></i></button></a>
+            <a href=""><button class="cta">Sign Up</button></a>
+            <a href=""><i class="bi bi-bag"></i></a>
         </div>
     </header>
 
@@ -35,13 +36,14 @@
             <h1 class="hero-title">The kind of <span class="change-color">furniture</span> you have been looking for
             </h1>
             <a href="#"><button><i class="bi bi-search"> </i> SEARCH CATALOG</button></a>
+            <a href="#"><button class="btn-white"><i class="bi bi-play-circle"></i> WATCH VIDEOS</button></a>
         </div>
         <div class="hero-image">
             <img src="src/img/sofa.jpg" alt="Gambar Hero">
             <div class="image-text">
                 <button class="btn-tag-price">$329</button>
                 <h2>Pösht Sofa</h2>
-                <a href="#"><button class="btn-brown">View Detail</button></a>
+                <a href="#"><button class="btn-brown">VIEW DETAILS <i class="bi bi-chevron-right"></i></button></a>
             </div>
         </div>
     </section>
@@ -57,7 +59,7 @@
                 </div>
                 <div class="icon">
                     <i class="bi bi-5-square"></i>
-                    <p class="icon-text">5 YEARS OF WARRANTY FOR EACH PROFUCT</p>
+                    <p class="icon-text">5 YEARS OF WARRANTY FOR EACH PRODUCT</p>
                 </div>
                 <div class="icon">
                     <i class="bi bi-briefcase"></i>
@@ -88,6 +90,95 @@
         </div>
     </section>
 
+    <section class="recom">
+        <div class="recom-left">
+            <img src="src/img/Rectangle 6794.jpg" alt="gambar1">
+            <img src="src/img/Rectangle 6793.jpg" alt="gambar2">
+            <img src="src/img/Rectangle 6792.jpg" alt="gambar3">
+        </div>
+        <div class="recom-right">
+            <h3 class="recom-category-title" onclick="toggleDescription()">Categories</h3>
+            <h2 class="recom-title">Furniture Sets
+                Recommendations</h2>
+            <div class="recom-categories">
+                <p class="recom-category" data-category="category1">Bedroom</p>
+                <div class="recom-description" data-category="category1">
+                    <p>great bedroom aesthetics with your family Designs created for increased comfortability
+                    </p>
+                </div>
+                <p class="recom-category" data-category="category2">Living Room</p>
+                <div class="recom-description" data-category="category2">
+                    <p>Enjoy a great living room aesthetics with your family Designs created for increased
+                        comfortability</p>
+                </div>
+                <p class="recom-category" data-category="category3">Home Office</p>
+                <div class="recom-description" data-category="category3">
+                    <p>Home Office with aesthetics with your family Designs created for increased
+                        comfortability</p>
+                </div>
+                <p class="recom-category" data-category="category4">Gaming Room</p>
+                <div class="recom-description" data-category="category4">
+                    <p>Set Gaming room aesthetics with your family Designs created for increased
+                        comfortability</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="row">
+            <div class="col">
+                <p>OUR PRODUCTS</p>
+                <h2>This Month Best Seller</h2>
+            </div>
+            <div class="col">
+                <button class="btn">See More</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="src/img/carousel1.png">
+                            <div class="caption">
+                                <button class="btn-tag-price">$329</button>
+                                <p>Sofa Und</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/img/carousel2.png">
+                            <div class="caption">
+                                <button class="btn-tag-price">$329</button>
+                                <p>Sofa Und</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/img/carousel3.png">
+                            <div class="caption">
+                                <button class="btn-tag-price">$329</button>
+                                <p>Sofa Und</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/img/carousel4.png">
+                            <div class="caption">
+                                <button class="btn-tag-price">$329</button>
+                                <p>Sofa Und</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-controls">
+                    <button class="prev"><i class="fa fa-angle-left"></i></button>
+                    <button class="next"><i class="fa fa-angle-right"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
     <section class="newsletter">
         <div class="container">
             <p class="newsletter-text">LIMITED DEALS</p>
@@ -95,11 +186,57 @@
                 <h3 class="newsletter-title">Become a member and get 10% off of your first purchase</h3>
                 <div class="form-input">
                     <input type="email" placeholder="Enter your email address">
-                    <i class="fas fa-envelope"></i>
+                    <i class="bi bi-envelope"></i>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="logo-container">
+                    <img src="src/img/logo.svg" alt="Logo">
+                </div>
+                <p class="desc">Dekoor is a furniture company created to fulfill the needs of family with aesthetic
+                    feeling in their furniture. Always pay attention to details and give clear communication for the
+                    customers. Priority of our design is comfortability.</p>
+                <p>©Copyright 2022 Dekoor</p>
+            </div>
+            <div class="footer-right">
+                <div class="column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Care guide</a></li>
+                        <li><a href="#">Reedem warranty</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Designer</a></li>
+                        <li><a href="#">Craftmaship</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+
 </body>
 
 </html>
